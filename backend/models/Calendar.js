@@ -40,9 +40,11 @@ Calendar.init({
     type: DataTypes.DATE,
     defaultValue: DataTypes.NOW,
     allowNull: false,
+  },
 }, {
   sequelize,
-  modelName: 'calendars'
+  modelName: 'Calendar', // 클래스 이름과 일치
+  tableName: 'calendars', // 데이터베이스 테이블 이름 명시
 });
 
 // User 모델과의 관계 설정

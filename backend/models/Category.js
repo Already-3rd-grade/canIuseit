@@ -16,9 +16,10 @@ const Category = sequelize.define('Category', {
   },
   shelfLifeDays: {
     type: DataTypes.INTEGER,
-    allowNull: true
+    allowNull: true,
   },
 }, {
+  modelName: 'Category',
   tableName: 'categories', // 테이블 이름 명시적 지정
   timestamps: false, // 타임스탬프 비활성화
 });
