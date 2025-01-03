@@ -34,7 +34,12 @@ Calendar.init({
   createdAt: {
     type: DataTypes.DATE,
     defaultValue: DataTypes.NOW,
+    allowNull: false,
   },
+  updatedAt: {
+    type: DataTypes.DATE,
+    defaultValue: DataTypes.NOW,
+    allowNull: false,
 }, {
   sequelize,
   modelName: 'calendars'
